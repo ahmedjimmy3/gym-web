@@ -1,0 +1,277 @@
+*{
+    font-family: 'Popins' , sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    transition: all .2s linear;
+    text-transform: capitalize;
+}
+body{
+    min-height: 100hv;
+}
+:root{
+    --main-color :rgb(106, 197, 15) ;
+    --main-transition:0.3s;
+    --background-color1: #eee;
+    --background-color2:#fff;
+}
+/* start payment */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    min-height: 100vh;
+    background: black ;
+    padding-bottom: 70px;
+}
+.container form{
+    padding: 20px;
+    width: 700px;
+    background-color: var(--background-color2);
+    box-shadow: 0 5px 10px rgpa(0,0,0,1);
+}
+.container form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.container form .col{
+    flex:1 1 250px;
+}
+.container form .col .title{
+    font-size: 20px ;
+    color: #333;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+.container form .col .inputBox{
+    margin: 15px 0;
+}
+.container form .col .inputBox span{
+    margin-bottom: 5px;
+    display: block;
+}
+.container form .col .inputBox input{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    text-transform: none;
+}
+
+.container form .row .col .inputBox  input:focus{
+    border: 1px solid #000;
+}
+.container form .row .col .flex{
+    display: flex;
+}
+.container form .row .col .flex .ma{        
+    padding: 20px;
+}
+.container form .row .col .flex .inputBox{
+     margin: 5px;
+}
+.container form .row .col .inputBox .cards{
+    display: flex;
+    gap: 20px;
+    padding-top: 10px;
+}
+.container form .row .col .inputBox .cards i{
+    font-size: 30px;
+}
+.container form .submit-btn{
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    background-color: #27ae60;
+    color: var(--background-color2);
+    cursor: pointer;
+}
+.container form .submit-btn:hover{
+    background-color: #2ecc71;
+}
+/* end payment */
+/* start admin */
+a{
+    text-decoration: none;
+}
+i{
+    font-size: 25px;
+}
+li{
+    list-style: none;
+}
+h1,h2{
+    color: #333;
+}
+h3{
+    color: #999;
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 10px;
+    border-bottom: 2px solid #999;
+}
+.btn{
+    background: var(--main-color);
+    color: var(--background-color2);
+    padding: 5px 10px;
+    text-align: center;
+}
+.btn:hover{
+    color: var(--main-color);
+    background: var(--background-color2);
+    padding: 3px 8px;
+    border: 2px solid var(--main-color);
+}
+.side-menu{
+    position: fixed;
+    background-color: var(--main-color);
+    width: 20vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.side-menu .class-name{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.side-menu li{
+    font-size: 25px;
+    padding: 10px 40px;
+    color: var(--background-color2);
+    display: flex;
+    align-items: center;
+}
+.side-menu li:hover{
+    background-color: var(--background-color2);
+    color: var(--main-color);
+}
+.containerr{
+    position: absolute;
+    right: 0;
+    width: 80vw;
+    height: 100vh;
+    background: var(--background-color1);
+}
+.containerr .header{
+    position: fixed;
+    top: 0;;
+    right: 0;
+    width: 80vw;
+    height: 10vh;
+    background-color: var(--background-color2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.containerr .header .nav{
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+.containerr .header .nav .search{
+    flex: 3;
+   display: flex;
+   justify-content: center;
+}
+.containerr .header .nav .search input[type = text]{
+    border: none;
+    background: var(--background-color1);
+    padding: 10px;
+    width: 50%;
+}
+.containerr .header .nav .search button{
+    width: 40px;
+    height: 40px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.containerr .header .nav .user{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.containerr .header .nav .user i{
+    font-size: 20px;
+}
+.containerr .header .nav .user .img-case i{
+    font-size: 20px;
+}
+.containerr .content{
+    position: relative;
+    margin-top: 10vh;
+    min-height: 90vh;
+    background-color: var(--background-color1);
+}
+
+.containerr .content .cards{
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.containerr .content .cards .card{
+    width: 250px;
+    height: 150px;
+    background: var(--background-color2);
+    margin: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgb(0, 0, 0 , 0.2), 0 6px 20px 0 rgb(0, 0, 0 , 0.19) ;
+}
+.containerr .content .cards .card i{
+    font-size: 20px;
+}
+.containerr .content .content-2{
+    min-height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.containerr .content .content-2 .recent-payments{
+    min-height: 50vh;
+    flex: 5;
+    background: var(--background-color2);
+    margin: 0 25px 25px 25px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0 , 0.2), 0 6px 20px 0 rgb(0, 0, 0 , 0.19) ;
+}
+.containerr .content .content-2 .new-clients{
+    flex: 2;
+    background: var(--background-color2);
+    min-height: 50vh;
+    margin: 0 25px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0 , 0.2), 0 6px 20px 0 rgb(0, 0, 0 , 0.19) ;
+}
+
+@media (max-width:991px){
+    .side-menu{
+        align-items: center;
+    }
+    .side-menu li{
+        font-size: 15px;
+    }
+    .class-name h1{
+        font-size: 20px;
+    }
+    .containerr .content .cards{
+        justify-content: center;
+    }
+    
+}
+
+/* end admin */
